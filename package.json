@@ -1,0 +1,8 @@
+{
+  "name": "dumb-build-server",
+  "version": "0.0.1",
+  "description": "Dumb Build Server",
+  "main": "index.js",
+  "license": "MIT",
+  "private": false
+}
