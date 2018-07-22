@@ -12,8 +12,10 @@ http.createServer((request, response) => {
     let url_parts = url.parse(request.url, true);
     let args = [];
     for (let p in url_parts.query) {
-        args.push(`"--${p}"`);
-        args.push(`"${url_parts.query[p]}"`);
+        let param_key = p.replace('"', '\\"').replace("'", "\\'");
+        let param_value = url_parts.query[p].replace('"', '\\"').replace("'", "\\'");
+        args.push(`"--${param_key}"`);
+        args.push(`"${param_value}"`);
     }
     args.push('> ./www/build.html');
 
