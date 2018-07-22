@@ -21,7 +21,7 @@ Each request will receive a response that looks like this:
 
 ```
 HTTP/1.1 307 Temporary Redirect
-Location: https://localhost/<hash>.html
+Location: https://<host>/<hash>.html
 Date: Sun, 22 Jul 2018 21:32:26 GMT
 Connection: keep-alive
 Transfer-Encoding: chunked
