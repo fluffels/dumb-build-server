@@ -28,8 +28,9 @@ http.createServer((request, response) => {
             }
         )
     } catch (error) {
+        console.error(error);
         response.writeHead(500);
-        response.end("" + error);
+        response.end();
         return;
     }
 
@@ -42,8 +43,9 @@ http.createServer((request, response) => {
             }
         )
     } catch(error) {
+        console.error(error);
         response.writeHead(500);
-        response.end("" + error);
+        response.end();
         return;
     }
 
