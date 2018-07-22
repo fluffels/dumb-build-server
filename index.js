@@ -3,6 +3,12 @@ const http = require('http');
 const url = require('url');
 
 http.createServer((request, response) => {
+    if (request.method != 'GET') {
+        response.writeHead(405);
+        response.end();
+        return;
+    }
+
     let url_parts = url.parse(request.url, true);
     let args = [];
     for (let p in url_parts.query) {
