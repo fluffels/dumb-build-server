@@ -37,7 +37,7 @@ http.createServer((request, response) => {
     }
 
     try {
-        child_process.spawnSync(
+        child_process.spawn(
             './build.sh',
             args,
             {
