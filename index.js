@@ -17,6 +17,8 @@ http.createServer((request, response) => {
     }
     args.push('> ./www/build.html');
 
+    console.log(`Received: ${request.url}`)
+
     try {
         child_process.spawnSync(
             'mkdir',
