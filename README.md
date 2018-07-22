@@ -23,6 +23,6 @@ A request that looks like this:
 
 ...will result in a command-line call like this:
 
-`./build "--param" "test" "--param2" "2"`
+`./build.sh "--param" "test" "--param2" "2"`
 
 Quotes are for preventing injection attacks.
