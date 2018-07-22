@@ -27,7 +27,7 @@ Connection: keep-alive
 Transfer-Encoding: chunked
 ```
 
-It's up to you to make sure this file is served correctly.
+It's up to you to make sure the redirect target (i.e. `https://<host>/<hash>.html`) is served correctly.
 Something like [NGINX](http://nginx.org) is probably a good choice for this.
 
 # Parameters
