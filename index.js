@@ -52,7 +52,7 @@ http.createServer((request, response) => {
     response.writeHead(
         307,
         {
-            'Location': 'http://localhost/build.html'
+            'Location': '/build.html'
         }
     );
     response.end();
