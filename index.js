@@ -30,6 +30,7 @@ http.createServer((request, response) => {
     } catch (error) {
         response.writeHead(500);
         response.end("" + error);
+        return;
     }
 
     try {
@@ -43,6 +44,7 @@ http.createServer((request, response) => {
     } catch(error) {
         response.writeHead(500);
         response.end("" + error);
+        return;
     }
 
     response.writeHead(
