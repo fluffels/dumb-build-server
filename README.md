@@ -1,5 +1,8 @@
-# dumb-build-server
-Dumb NodeJS build server.
+# Overview
+This is a dumb build server.
+Dumb in the sense of being minimal.
+This server listens on a port and kicks off bash shell build scripts.
+The scripts write to an HTML file that you can serve with NGINX or something similar.
 
 # Installation
 `npm install git+https://git@github.com/fluffels/dumb-build-server.git`
