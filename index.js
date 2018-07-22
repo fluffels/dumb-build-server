@@ -51,10 +51,12 @@ http.createServer((request, response) => {
         return;
     }
 
+    let host = request.headers.host;
+    host = host.slice(0, host.indexOf(':'));
     response.writeHead(
         307,
         {
-            'Location': '/build.html'
+            'Location': `https://${host}/build.html`
         }
     );
     response.end();
