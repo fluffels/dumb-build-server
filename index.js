@@ -1,6 +1,7 @@
 const child_process = require('child_process');
 const http = require('http');
 const url = require('url');
+const port = 49152;
 
 http.createServer((request, response) => {
     if (request.method != 'GET') {
@@ -72,5 +73,7 @@ http.createServer((request, response) => {
     );
     response.end();
 }).listen(
-    49152
+    port
 );
+
+console.log(`Listening on ${port}...`);
