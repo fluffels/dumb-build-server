@@ -27,7 +27,7 @@ http.createServer((request, response) => {
         args.push(`"--${param_key}"`);
         args.push(`"${param_value}"`);
     }
-    args.push('> ./www/build.html');
+    args.push('| aha > ./www/build.html');
 
     console.log(`Received: ${request.url}`);
 
